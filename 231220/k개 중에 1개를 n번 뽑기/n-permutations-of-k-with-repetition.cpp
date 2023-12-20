@@ -19,7 +19,7 @@ void choose(int depth) {
 
 int main() {
     cin >> K >> N;
-    arr = vector<int>(K);
+    arr = vector<int>(N);
     choose(0);
 
     return 0;
