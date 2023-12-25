@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-    int N, master, member, answer = 0;
+    int N, master, member;
+    long long int answer = 0;
     cin >> N;
     vector<int> store(N);
 
