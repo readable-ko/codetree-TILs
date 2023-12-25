@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int N, master, member;
+    int N, master, member, answer = 0;
     cin >> N;
     vector<int> store(N);
 
@@ -12,11 +12,12 @@ int main() {
     cin >> master >> member;
     
     for (int s: store) {
-        int left = s - master, answer = 1;
+        int left = s - master;
         if (left > 0) {
-            answer = ceil(left/double(member));
+            answer += ceil(left/double(member));
         }
-        cout << answer << " ";
+        answer++;
     }
+    cout << answer;
     return 0;
 }
